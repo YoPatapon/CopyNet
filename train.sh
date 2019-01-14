@@ -1,0 +1,16 @@
+python src/train.py \
+    --num-epochs 40 \
+    --batch-size 32 \
+    --dev-batch-size 64 \
+    --train-file train_processed.jsonl \
+    --dev-file dev_processed.jsonl \
+    --embedding-file glove.840B.300d.txt \
+    --display-samples True \
+    --max-length 50 \
+    --decoder-type 'copy' \
+    --fix-embeddings False \
+    --optimizer adam \
+    --vocab-limit 30000 \
+    --use-extended-vocab True \
+    --hidden-size 64 \
+    --gpu 6 \
